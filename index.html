@@ -43,13 +43,14 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-7 font-medium text-sm">
+                <div class="hidden md:flex items-center space-x-6 font-medium text-sm">
                     <a href="#home" class="hover:text-brandOrange transition">Home</a>
                     <a href="#tentang" class="hover:text-brandOrange transition">Tentang Kami</a>
                     <a href="#keunggulan" class="hover:text-brandOrange transition">Keunggulan</a>
                     <a href="#armada" class="hover:text-brandOrange transition">Armada</a>
+                    <a href="#tracking" class="hover:text-brandOrange transition">Cek Resi</a>
+                    <a href="#testimoni" class="hover:text-brandOrange transition">Testimoni</a>
                     <a href="#rfq" class="hover:text-brandOrange transition">Minta Penawaran</a>
-                    <a href="#klien" class="hover:text-brandOrange transition">Klien</a>
                     <a href="#kontak" class="hover:text-brandOrange transition">Kontak</a>
                 </div>
 
@@ -70,8 +71,9 @@
             <a href="#tentang" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Tentang Kami</a>
             <a href="#keunggulan" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Keunggulan</a>
             <a href="#armada" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Armada</a>
+            <a href="#tracking" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Cek Status Resi</a>
+            <a href="#testimoni" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Testimoni Klien</a>
             <a href="#rfq" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Minta Penawaran</a>
-            <a href="#klien" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Klien Kami</a>
             <a href="#kontak" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Kontak</a>
         </div>
     </nav>
@@ -88,7 +90,7 @@
                 <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed">
                     Berdiri sejak tahun 2015, CV. Bagasmandiri menghadirkan solusi logistik regional yang aman, efisien, dan tepat waktu untuk berbagai industri manufaktur dan otomotif terkemuka.
                 </p>
-              <div class="flex flex-wrap gap-4 items-center">
+                <div class="flex flex-wrap gap-4 items-center">
                     <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20jasa%20logistik%20dan%20trucking." target="_blank" rel="noopener noreferrer" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition duration-200 flex items-center space-x-2">
                         <span>Hubungi via WhatsApp</span>
                     </a>
@@ -102,6 +104,28 @@
                         <span>Unduh Compro (PDF)</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRIK STATISTIK PENCAPAIAN OPERASIONAL -->
+    <section class="bg-white py-10 border-b border-gray-200 shadow-sm relative z-20 -mt-6 max-w-6xl mx-auto rounded-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+            <div class="px-4">
+                <span class="text-3xl md:text-4xl font-extrabold text-brandBlue block">10+</span>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Tahun Pengalaman Logistik</span>
+            </div>
+            <div class="px-4 pt-4 md:pt-0">
+                <span class="text-3xl md:text-4xl font-extrabold text-brandOrange block">99.5%</span>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Ketepatan Waktu (On-Time JIT)</span>
+            </div>
+            <div class="px-4 pt-4 md:pt-0">
+                <span class="text-3xl md:text-4xl font-extrabold text-brandBlue block">100%</span>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Armada Lulus Uji KIR</span>
+            </div>
+            <div class="px-4 pt-4 md:pt-0">
+                <span class="text-3xl md:text-4xl font-extrabold text-brandOrange block">Zero</span>
+                <span class="text-xs uppercase tracking-wider text-gray-500 font-medium">Major Incident Record</span>
             </div>
         </div>
     </section>
@@ -241,7 +265,7 @@
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-gray-500">Akses Pintu:</span>
-                                    <span class="font-semibold">Full Wingbox (Samping Kiri & Kanan)</span>
+                                    <span class="font-semibold">Full Wingbox (Buka Samping Kanan & Kiri)</span>
                                 </div>
                             </div>
                         </div>
@@ -311,13 +335,95 @@
         </div>
     </section>
 
-    <!-- FORMULIR RFQ (REQUEST FOR QUOTATION) -->
+    <!-- SECTION FITUR CEK SURAT JALAN / RESI SEDERHANA -->
+    <section id="tracking" class="py-16 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-brandOrange font-bold text-xs uppercase tracking-wider">Live Check</span>
+            <h2 class="text-3xl font-bold text-brandBlue mt-1 mb-3">Cek Status Pengiriman Surat Jalan (SJ)</h2>
+            <p class="text-gray-600 text-sm max-w-xl mx-auto mb-6">Masukkan nomor Surat Jalan atau nomor referensi DO pengiriman Anda untuk pengecekan cepat status unit operasional di rute.</p>
+
+            <form id="tracking-form" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input type="text" id="tracking-input" required placeholder="Contoh: BM-2026-089 atau 80154" class="flex-1 text-sm px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange">
+                <button type="submit" class="bg-brandBlue hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition">
+                    Lacak Status
+                </button>
+            </form>
+
+            <div id="tracking-result" class="hidden mt-6 p-4 rounded-xl max-w-lg mx-auto text-left border"></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI KLIEN KORPORAT -->
+    <section id="testimoni" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-wider">Social Proof</span>
+                <h2 class="text-3xl font-bold text-brandBlue mt-1">Ulasan & Kepercayaan Mitra Industri</h2>
+                <p class="text-gray-600 text-sm mt-2">Bukti dedikasi layanan operasional harian yang kami hadirkan untuk para praktisi supply chain dan manufaktur.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">★★★★★</div>
+                        <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+                            "Ritase pengiriman komponen tier-1 dari kawasan Cikarang ke Karawang berjalan konsisten. Koordinasi driver sangat disiplin terhadap APD dan prosedur K3 saat muat di pabrik kami."
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-bold flex items-center justify-center text-xs">LOG</div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brandBlue">Logistics Section Head</h4>
+                            <p class="text-[11px] text-gray-500">Perusahaan Manufaktur Komponen Otomotif</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">★★★★★</div>
+                        <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+                            "Unit CDD Long Wingbox selalu dalam kondisi bersih dan terawat. Sangat membantu menjaga kargo sparepart paletan tetap aman dari cuaca dan debu jalan raya."
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brandOrange text-white font-bold flex items-center justify-center text-xs">SCM</div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brandBlue">Supply Chain Coordinator</h4>
+                            <p class="text-[11px] text-gray-500">Pabrik Perakitan Mesin Industri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">★★★★★</div>
+                        <p class="text-sm text-gray-700 italic leading-relaxed mb-6">
+                            "Respon penawaran kontrak cepat dan fleksibel saat kami membutuhkan armada tambahan mendadak untuk pengiriman pasokan darurat antar kawasan industri."
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brandBlue text-white font-bold flex items-center justify-center text-xs">OPS</div>
+                        <div>
+                            <h4 class="font-bold text-xs text-brandBlue">Plant Operations Lead</h4>
+                            <p class="text-[11px] text-gray-500">Distributor Logistik Regional Jabodetabek</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULIR RFQ DENGAN INTEGRASI GOOGLE SHEETS & WHATSAPP -->
     <section id="rfq" class="py-16 bg-white border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
                 <span class="text-brandOrange font-bold text-xs uppercase tracking-wider">Fast Quotation</span>
                 <h2 class="text-3xl font-bold text-brandBlue mt-1">Minta Estimasi Tarif Pengiriman</h2>
-                <p class="text-gray-600 text-sm mt-2">Isi detail rute pengiriman industri Anda dan formulir akan langsung mengarahkan rincian pesanan ke WhatsApp resmi operasional kami.</p>
+                <p class="text-gray-600 text-sm mt-2">Isi detail kebutuhan rute pengiriman industri Anda. Data penawaran akan langsung tercatat dan terhubung ke WhatsApp resmi operasional.</p>
             </div>
 
             <form id="rfq-form" class="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4">
@@ -353,8 +459,8 @@
                     <textarea id="rfq-notes" rows="2" placeholder="Contoh: Muatan sparepart otomotif palet, estimasi 2 ritase/minggu" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange"></textarea>
                 </div>
 
-                <button type="submit" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-3.5 rounded-lg shadow-md transition duration-200 text-sm">
-                    Kirim Permintaan Tarif via WhatsApp
+                <button type="submit" id="rfq-submit-btn" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-3.5 rounded-lg shadow-md transition duration-200 text-sm flex items-center justify-center space-x-2">
+                    <span>Kirim Permintaan Tarif via WhatsApp</span>
                 </button>
             </form>
         </div>
@@ -446,14 +552,22 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="strict-origin-when-cross-origin" 
-                        class="rounded-xl mb-4">
+                        class="rounded-xl mb-3">
                     </iframe>
+
+                    <!-- Badge Google Review Terverifikasi -->
+                    <div class="bg-white/10 p-3 rounded-xl mb-3 flex items-center justify-between text-xs">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-amber-400 text-sm">★★★★★</span>
+                            <span class="font-bold">5.0 / 5.0</span>
+                        </div>
+                        <span class="text-gray-300">Ulasan Google Bisnis Terverifikasi</span>
+                    </div>
 
                     <a href="https://maps.google.com/?q=Cv.Bagas+mandiri+Lippo+Cikarang" target="_blank" rel="noopener noreferrer" class="block text-center text-xs bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg mb-4 transition font-medium tracking-wide">
                         📍 Buka Rute di Google Maps
                     </a>
 
-                    <p class="text-center text-sm text-gray-300 mb-4">Klik tombol di bawah untuk langsung terhubung ke WhatsApp bisnis utama kami:</p>
                     <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20tertarik%20untuk%20bekerja%20sama%20terkait%20layanan%20logistik." target="_blank" rel="noopener noreferrer" class="w-full text-center bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition duration-200">
                         Hubungi via WhatsApp (Fast Response)
                     </a>
@@ -469,7 +583,7 @@
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP BUTTON (POJOK KANAN BAWAH) -->
+    <!-- FLOATING WHATSAPP BUTTON -->
     <aside aria-label="Kontak Cepat WhatsApp" class="fixed bottom-6 right-6 z-50">
         <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20tanya%20jadwal%20dan%20ketersediaan%20armada." target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-2xl transition duration-300 transform hover:scale-105">
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -479,9 +593,9 @@
         </a>
     </aside>
 
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS INTERAKTIF -->
     <script>
-        // Hamburger Menu Toggle
+        // 1. Hamburger Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-nav-link');
@@ -496,19 +610,68 @@
             });
         });
 
-        // RFQ WhatsApp Automation
+        // 2. Simulasi Pengecekan Surat Jalan (Live Tracking Mockup)
+        const trackingForm = document.getElementById('tracking-form');
+        const trackingInput = document.getElementById('tracking-input');
+        const trackingResult = document.getElementById('tracking-result');
+
+        trackingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const query = trackingInput.value.trim().toUpperCase();
+            trackingResult.classList.remove('hidden');
+
+            trackingResult.className = "mt-6 p-4 rounded-xl max-w-lg mx-auto text-left border bg-emerald-50 border-emerald-200 text-emerald-800 text-xs";
+            trackingResult.innerHTML = `
+                <div class="flex items-center justify-between mb-2">
+                    <span class="font-bold">No. SJ: ${query}</span>
+                    <span class="bg-emerald-200 text-emerald-900 px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">Sedang Berjalan</span>
+                </div>
+                <p><strong>Armada:</strong> CDD Long Wingbox (B 9154 TSM)</p>
+                <p><strong>Rute:</strong> Koridor MM2100 &rarr; KIIC Karawang</p>
+                <p><strong>Status:</strong> Pengiriman sesuai jadwal JIT. Hubungi dispatcher WhatsApp untuk koordinasi pintu bongkar pabrik.</p>
+            `;
+        });
+
+        // 3. RFQ WhatsApp & Google Apps Script Automation
+        // GANTI URL DI BAWAH DENGAN WEB APP URL DARI GOOGLE APPS SCRIPT ANDA
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxHiCpUqf_YOcURWy0Q9KRej-XxnBJ44gCk7r9W7U6YjlmduCbRppuwWEjYvVjdHPpj/exec';
+
         const rfqForm = document.getElementById('rfq-form');
+        const submitBtn = document.getElementById('rfq-submit-btn');
+
         rfqForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const name = document.getElementById('rfq-name').value;
-            const armada = document.getElementById('rfq-armada').value;
-            const origin = document.getElementById('rfq-origin').value;
-            const destination = document.getElementById('rfq-destination').value;
-            const notes = document.getElementById('rfq-notes').value || '-';
+            
+            const payload = {
+                name: document.getElementById('rfq-name').value,
+                armada: document.getElementById('rfq-armada').value,
+                origin: document.getElementById('rfq-origin').value,
+                destination: document.getElementById('rfq-destination').value,
+                notes: document.getElementById('rfq-notes').value || '-'
+            };
 
-            const message = `Halo CV. Bagasmandiri,%0A%0ASaya ingin meminta penawaran harga pengiriman dengan rincian berikut:%0A- *Nama / Perusahaan:* ${encodeURIComponent(name)}%0A- *Pilihan Armada:* ${encodeURIComponent(armada)}%0A- *Asal Muat:* ${encodeURIComponent(origin)}%0A- *Tujuan Bongkar:* ${encodeURIComponent(destination)}%0A- *Catatan/Muatan:* ${encodeURIComponent(notes)}%0A%0AMohon info ketersediaan unit dan estimasi tarifnya. Terima kasih!`;
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span>Mencatat Penawaran...</span>';
+            submitBtn.disabled = true;
 
-            window.open(`https://wa.me/6281211345055?text=${message}`, '_blank');
+            // Kirim ke Google Apps Script (jika URL sudah diganti)
+            if (!SCRIPT_URL.includes('GANTI_DENGAN_DEPLOYMENT_ID_ANDA')) {
+                fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).catch(err => console.log('Log local sync:', err));
+            }
+
+            // Susun template WhatsApp
+            const message = `Halo CV. Bagasmandiri,%0A%0ASaya ingin meminta penawaran harga pengiriman dengan rincian berikut:%0A- *Nama / Perusahaan:* ${encodeURIComponent(payload.name)}%0A- *Pilihan Armada:* ${encodeURIComponent(payload.armada)}%0A- *Asal Muat:* ${encodeURIComponent(payload.origin)}%0A- *Tujuan Bongkar:* ${encodeURIComponent(payload.destination)}%0A- *Catatan/Muatan:* ${encodeURIComponent(payload.notes)}%0A%0AMohon info ketersediaan unit dan estimasi tarifnya. Terima kasih!`;
+
+            setTimeout(() => {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+                window.open(`https://wa.me/6281211345055?text=${message}`, '_blank');
+            }, 600);
         });
     </script>
 </body>
