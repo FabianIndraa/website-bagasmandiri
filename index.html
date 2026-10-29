@@ -26,7 +26,7 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brandOrange selection:text-white relative">
 
     <!-- NAVIGATION BAR -->
     <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-md">
@@ -43,11 +43,13 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 font-medium text-sm">
+                <div class="hidden md:flex items-center space-x-7 font-medium text-sm">
                     <a href="#home" class="hover:text-brandOrange transition">Home</a>
                     <a href="#tentang" class="hover:text-brandOrange transition">Tentang Kami</a>
-                    <a href="#armada" class="hover:text-brandOrange transition">Armada & Layanan</a>
-                    <a href="#klien" class="hover:text-brandOrange transition">Klien Kami</a>
+                    <a href="#keunggulan" class="hover:text-brandOrange transition">Keunggulan</a>
+                    <a href="#armada" class="hover:text-brandOrange transition">Armada</a>
+                    <a href="#rfq" class="hover:text-brandOrange transition">Minta Penawaran</a>
+                    <a href="#klien" class="hover:text-brandOrange transition">Klien</a>
                     <a href="#kontak" class="hover:text-brandOrange transition">Kontak</a>
                 </div>
 
@@ -66,7 +68,9 @@
         <div id="mobile-menu" class="hidden md:hidden bg-brandBlue border-t border-white/10 px-4 pt-3 pb-5 space-y-2 text-sm font-medium">
             <a href="#home" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Home</a>
             <a href="#tentang" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Tentang Kami</a>
-            <a href="#armada" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Armada & Layanan</a>
+            <a href="#keunggulan" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Keunggulan</a>
+            <a href="#armada" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Armada</a>
+            <a href="#rfq" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Minta Penawaran</a>
             <a href="#klien" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Klien Kami</a>
             <a href="#kontak" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Kontak</a>
         </div>
@@ -84,12 +88,15 @@
                 <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed">
                     Berdiri sejak tahun 2015, CV. Bagasmandiri menghadirkan solusi logistik regional yang aman, efisien, dan tepat waktu untuk berbagai industri manufaktur dan otomotif terkemuka.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20jasa%20logistik%20dan%20trucking." target="_blank" rel="noopener noreferrer" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-lg shadow-lg transition duration-200 flex items-center space-x-2">
+                <div class="flex flex-wrap gap-4 items-center">
+                    <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20jasa%20logistik%20dan%20trucking." target="_blank" rel="noopener noreferrer" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-lg shadow-lg transition duration-200 flex items-center space-x-2">
                         <span>Hubungi via WhatsApp</span>
                     </a>
-                    <a href="#armada" class="border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg transition duration-200">
-                        Lihat Pilihan Armada
+                    <a href="#rfq" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-3.5 rounded-lg transition duration-200">
+                        Minta Estimasi Tarif
+                    </a>
+                    <a href="images/compro-bagasmandiri.pdf" download class="text-gray-300 hover:text-white underline text-sm transition py-2 px-1">
+                        📄 Unduh Company Profile (PDF)
                     </a>
                 </div>
             </div>
@@ -112,7 +119,7 @@
                         Kami berkomitmen untuk menghadirkan layanan pengiriman yang aman, tepat waktu, dan efisien dengan armada lengkap serta tim operasional yang berdedikasi tinggi.
                     </p>
                     
-                    <!-- Legalitas Sederhana & Aman (Hanya NIB) -->
+                    <!-- Legalitas Sederhana & Aman -->
                     <div class="bg-gray-50 p-5 rounded-xl border border-gray-200 flex items-center justify-between">
                         <div>
                             <h3 class="font-bold text-brandBlue text-xs tracking-wider uppercase">Legalitas Resmi Perusahaan</h3>
@@ -164,7 +171,43 @@
         </div>
     </section>
 
-    <!-- LAYANAN & ARMADA SECTION -->
+    <!-- SECTION KEUNGGULAN OPERASIONAL -->
+    <section id="keunggulan" class="py-16 bg-gray-100 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-wider">Komitmen Pelayanan</span>
+                <h2 class="text-3xl font-bold text-brandBlue mt-2">Mengapa Memilih CV. Bagasmandiri?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="w-12 h-12 bg-brandBlue/10 text-brandBlue flex items-center justify-center rounded-lg text-2xl mb-4">⏱️</div>
+                    <h3 class="font-bold text-brandBlue mb-2">Presisi Waktu JIT</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Mendukung sistem produksi <i>Just-In-Time</i> agar perakitan manufaktur berjalan tanpa jeda pengiriman.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="w-12 h-12 bg-brandBlue/10 text-brandBlue flex items-center justify-center rounded-lg text-2xl mb-4">🛡️</div>
+                    <h3 class="font-bold text-brandBlue mb-2">Standar K3 Pabrik</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Pengemudi terlatih mematuhi regulasi keselamatan kerja dan APD lengkap saat bongkar muat di kawasan industri.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="w-12 h-12 bg-brandBlue/10 text-brandBlue flex items-center justify-center rounded-lg text-2xl mb-4">🔧</div>
+                    <h3 class="font-bold text-brandBlue mb-2">Armada Prima & Uji KIR</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Pemeriksaan teknis rutin berkala memastikan unit selalu layak jalan dan siap untuk jadwal pengiriman intensif.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="w-12 h-12 bg-brandBlue/10 text-brandBlue flex items-center justify-center rounded-lg text-2xl mb-4">📍</div>
+                    <h3 class="font-bold text-brandBlue mb-2">Spesialis Koridor Industri</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Memahami rute efisien lintasan kawasan industri Cikarang, Karawang, Cibitung, hingga Jabodetabek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN & ARMADA SECTION DENGAN SPESIFIKASI -->
     <section id="armada" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-brandBlue mb-4">Layanan & Armada Tersedia</h2>
@@ -173,7 +216,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1: CDD Long Wingbox -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
                     <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
                         <img src="images/truk-isuzu.jpeg" alt="Truck CDD Long Wingbox" class="w-full h-full object-cover" loading="lazy">
                     </div>
@@ -181,13 +224,29 @@
                         <div>
                             <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Heavy Logistics</span>
                             <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Truck CDD Long Wingbox</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">Armada kapasitas besar dengan akses buka samping fleksibel. Sangat ideal untuk distribusi logistik regional ritase tinggi produk industri.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Armada kapasitas besar dengan akses buka samping fleksibel. Sangat ideal untuk distribusi logistik regional ritase tinggi produk industri.</p>
+                            
+                            <!-- Spesifikasi Teknis -->
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 space-y-1.5 text-xs text-gray-700">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Estimasi Dimensi:</span>
+                                    <span class="font-semibold">± 9.4m × 2.4m × 2.5m</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Kapasitas Muatan:</span>
+                                    <span class="font-semibold">Hingga 7 – 8 Ton</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Akses Pintu:</span>
+                                    <span class="font-semibold">Full Wingbox (Samping Kiri & Kanan)</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2: Engkel Box -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
                     <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
                         <img src="images/truk-engkel-box.jpeg" alt="Truk Engkel Box" class="w-full h-full object-cover" loading="lazy">
                     </div>
@@ -195,13 +254,29 @@
                         <div>
                             <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Medium Truck</span>
                             <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Engkel Box</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">Truk box tertutup untuk pengiriman material dan onderdil pabrik dengan jaminan proteksi penuh dari cuaca ekstrem selama perjalanan rute industri.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Truk box tertutup untuk pengiriman material dan onderdil pabrik dengan jaminan proteksi penuh dari cuaca ekstrem selama perjalanan rute industri.</p>
+                            
+                            <!-- Spesifikasi Teknis -->
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 space-y-1.5 text-xs text-gray-700">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Estimasi Dimensi:</span>
+                                    <span class="font-semibold">± 3.1m × 1.6m × 1.7m</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Kapasitas Muatan:</span>
+                                    <span class="font-semibold">Hingga 2 – 2.5 Ton</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Akses Pintu:</span>
+                                    <span class="font-semibold">Pintu Box Belakang Tertutup</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3: Pickup Box & Blindvan -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
                     <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
                         <img src="images/mobil-box-kecil.jpeg" alt="Pickup Box & Blindvan" class="w-full h-full object-cover" loading="lazy">
                     </div>
@@ -209,7 +284,23 @@
                         <div>
                             <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Light Commercial</span>
                             <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Pickup Box & Blindvan</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">Armada komersial lincah untuk pengiriman pasokan komponen pabrik mendesak skala kecil rute area padat atau kawasan industri tertentu.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">Armada komersial lincah untuk pengiriman pasokan komponen pabrik mendesak skala kecil rute area padat atau kawasan industri tertentu.</p>
+                            
+                            <!-- Spesifikasi Teknis -->
+                            <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 space-y-1.5 text-xs text-gray-700">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Estimasi Dimensi:</span>
+                                    <span class="font-semibold">± 2.4m × 1.5m × 1.3m</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Kapasitas Muatan:</span>
+                                    <span class="font-semibold">Hingga 800 Kg – 1 Ton</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-500">Akses Pintu:</span>
+                                    <span class="font-semibold">Pintu Belakang & Samping Geser</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,7 +308,56 @@
         </div>
     </section>
 
-    <!-- KLIEN KAMI SECTION (WARNA ASLI & BERSIH) -->
+    <!-- FORMULIR RFQ (REQUEST FOR QUOTATION) -->
+    <section id="rfq" class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-wider">Fast Quotation</span>
+                <h2 class="text-3xl font-bold text-brandBlue mt-1">Minta Estimasi Tarif Pengiriman</h2>
+                <p class="text-gray-600 text-sm mt-2">Isi detail rute pengiriman industri Anda dan formulir akan langsung mengarahkan rincian pesanan ke WhatsApp resmi operasional kami.</p>
+            </div>
+
+            <form id="rfq-form" class="bg-gray-50 p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Nama Perusahaan / PIC *</label>
+                        <input type="text" id="rfq-name" required placeholder="PT / Bpk. ..." class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Pilihan Unit Armada *</label>
+                        <select id="rfq-armada" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange bg-white">
+                            <option value="CDD Long Wingbox">Truck CDD Long Wingbox</option>
+                            <option value="Engkel Box">Engkel Box</option>
+                            <option value="Pickup Box / Blindvan">Pickup Box & Blindvan</option>
+                            <option value="Belum Tahu / Butuh Rekomendasi">Butuh Rekomendasi Unit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Titik Asal Muat (Origin) *</label>
+                        <input type="text" id="rfq-origin" required placeholder="Contoh: Kawasan MM2100 Cikarang" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Titik Tujuan Bongkar (Destination) *</label>
+                        <input type="text" id="rfq-destination" required placeholder="Contoh: KIIC Karawang Barat" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Keterangan Tambahan / Jenis Muatan</label>
+                    <textarea id="rfq-notes" rows="2" placeholder="Contoh: Muatan sparepart otomotif palet, estimasi 2 ritase/minggu" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brandOrange"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-3.5 rounded-lg shadow-md transition duration-200 text-sm">
+                    Kirim Permintaan Tarif via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- KLIEN KAMI SECTION -->
     <section id="klien" class="py-16 bg-white border-t border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-10">
@@ -326,8 +466,19 @@
         </div>
     </footer>
 
-    <!-- Script Hamburger Menu Interaktif -->
+    <!-- FLOATING WHATSAPP BUTTON (POJOK KANAN BAWAH) -->
+    <aside aria-label="Kontak Cepat WhatsApp" class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20tanya%20jadwal%20dan%20ketersediaan%20armada." target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-2xl transition duration-300 transform hover:scale-105">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.123-.521-1.636-.677-2.735-2.316-2.822-2.428-.088-.113-.679-.904-.679-1.726 0-.821.431-1.226.584-1.391.154-.165.337-.206.449-.206.113 0 .225.001.324.006.104.005.244-.039.382.293.144.343.488 1.192.531 1.28.043.088.072.19.014.305-.058.114-.088.187-.174.29-.088.102-.185.228-.264.307-.089.088-.182.185-.078.363.104.178.463.765.994 1.238.683.609 1.259.798 1.437.886.178.088.283.074.389-.047.106-.122.454-.528.576-.708.121-.18.243-.15.405-.089.163.061 1.033.487 1.21.576.178.088.297.132.341.206.044.074.044.431-.1 1.036z"/>
+            </svg>
+            <span class="text-xs font-bold tracking-wide hidden sm:inline">Chat WhatsApp</span>
+        </a>
+    </aside>
+
+    <!-- SCRIPTS -->
     <script>
+        // Hamburger Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-nav-link');
@@ -340,6 +491,21 @@
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
+        });
+
+        // RFQ WhatsApp Automation
+        const rfqForm = document.getElementById('rfq-form');
+        rfqForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('rfq-name').value;
+            const armada = document.getElementById('rfq-armada').value;
+            const origin = document.getElementById('rfq-origin').value;
+            const destination = document.getElementById('rfq-destination').value;
+            const notes = document.getElementById('rfq-notes').value || '-';
+
+            const message = `Halo CV. Bagasmandiri,%0A%0ASaya ingin meminta penawaran harga pengiriman dengan rincian berikut:%0A- *Nama / Perusahaan:* ${encodeURIComponent(name)}%0A- *Pilihan Armada:* ${encodeURIComponent(armada)}%0A- *Asal Muat:* ${encodeURIComponent(origin)}%0A- *Tujuan Bongkar:* ${encodeURIComponent(destination)}%0A- *Catatan/Muatan:* ${encodeURIComponent(notes)}%0A%0AMohon info ketersediaan unit dan estimasi tarifnya. Terima kasih!`;
+
+            window.open(`https://wa.me/6281211345055?text=${message}`, '_blank');
         });
     </script>
 </body>
