@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV. Bagasmandiri - Jasa Pengiriman Logistik & Trucking</title>
+    <title>CV. Bagasmandiri - Jasa Pengiriman Logistik & Trucking B2B</title>
+    
+    <!-- Meta SEO & Social Sharing -->
+    <meta name="description" content="CV. Bagasmandiri melayani jasa logistik, transportasi, dan armada trucking untuk kawasan industri Bekasi, Karawang, Jakarta, dan sekitarnya.">
+    <meta property="og:title" content="CV. Bagasmandiri - Jasa Pengiriman Logistik & Trucking">
+    <meta property="og:description" content="Solusi transportasi & rantai pasok industri andal dengan armada CDD Long Wingbox, Engkel Box, dan Blindvan.">
+    <meta property="og:type" content="website">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,49 +26,69 @@
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-brandOrange selection:text-white">
 
     <!-- NAVIGATION BAR -->
     <nav class="bg-brandBlue text-white sticky top-0 z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
-                    <div class="flex items-center space-x-3">
+                    <a href="#home" class="flex items-center space-x-3">
                         <img src="images/logo.jpeg" alt="Logo CV. Bagasmandiri" class="h-12 w-auto object-contain rounded-md bg-white p-1">
                         <div>
                             <span class="font-bold text-lg block tracking-wide">CV. BAGASMANDIRI</span>
-                            <span class="text-xs text-gray-300 block -mt-1">LOGISTIK & TRUCKING</span>
+                            <span class="text-xs text-gray-300 block -mt-1 tracking-wider">LOGISTIK & TRUCKING</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="hidden md:flex space-x-8 font-medium">
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium text-sm">
                     <a href="#home" class="hover:text-brandOrange transition">Home</a>
                     <a href="#tentang" class="hover:text-brandOrange transition">Tentang Kami</a>
                     <a href="#armada" class="hover:text-brandOrange transition">Armada & Layanan</a>
                     <a href="#klien" class="hover:text-brandOrange transition">Klien Kami</a>
                     <a href="#kontak" class="hover:text-brandOrange transition">Kontak</a>
                 </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandBlue border-t border-white/10 px-4 pt-3 pb-5 space-y-2 text-sm font-medium">
+            <a href="#home" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Home</a>
+            <a href="#tentang" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Tentang Kami</a>
+            <a href="#armada" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Armada & Layanan</a>
+            <a href="#klien" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Klien Kami</a>
+            <a href="#kontak" class="block py-2 hover:text-brandOrange transition mobile-nav-link">Kontak</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
     <section id="home" class="relative bg-brandBlue text-white py-24 md:py-32 overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200');"></div>
+        <div class="absolute inset-0 opacity-15 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1200');"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
-                <span class="text-brandOrange font-bold tracking-wider uppercase bg-orange-500/10 px-3 py-1 rounded-full text-sm">Spesialis Jasa Pengiriman Logistik & Trucking</span>
-                <h1 class="text-4xl md:text-6xl font-extrabold my-6 leading-tight">
+                <span class="text-brandOrange font-bold tracking-wider uppercase bg-orange-500/10 px-3.5 py-1.5 rounded-full text-xs sm:text-sm inline-block mb-4">Spesialis Jasa Pengiriman Logistik & Trucking</span>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold my-4 leading-tight">
                     Solusi Transportasi & Rantai Pasok Industri Andal
                 </h1>
-                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed">
                     Berdiri sejak tahun 2015, CV. Bagasmandiri menghadirkan solusi logistik regional yang aman, efisien, dan tepat waktu untuk berbagai industri manufaktur dan otomotif terkemuka.
                 </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://wa.me/6281211345055" target="_blank" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-lg shadow-lg transition flex items-center space-x-2">
+                    <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20jasa%20logistik%20dan%20trucking." target="_blank" rel="noopener noreferrer" class="bg-brandOrange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-lg shadow-lg transition duration-200 flex items-center space-x-2">
                         <span>Hubungi via WhatsApp</span>
                     </a>
-                    <a href="#armada" class="border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg transition">
+                    <a href="#armada" class="border border-white/30 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-lg transition duration-200">
                         Lihat Pilihan Armada
                     </a>
                 </div>
@@ -78,24 +105,24 @@
                         Sejarah & Profil Perusahaan
                         <span class="absolute bottom-0 left-0 w-16 h-1 bg-brandOrange rounded"></span>
                     </h2>
-                    <p class="text-gray-650 leading-relaxed mb-4">
+                    <p class="text-gray-600 leading-relaxed mb-4">
                         CV. Bagasmandiri berdiri sejak tahun 2015 dan bergerak di bidang jasa logistik, transportasi, dan trucking. Dengan pengalaman lebih dari 10 tahun melayani pengiriman barang dan sparepart perusahaan, kami telah dipercaya oleh berbagai perusahaan besar di sektor otomotif dan industri manufaktur.
                     </p>
-                    <p class="text-gray-650 leading-relaxed mb-6">
-                        Kami berkomitmen untuk menghadirkan layanan pengiriman yang aman, tepat waktu, dan efisien dengan armada lengkap serta tim yang berpengalaman.
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Kami berkomitmen untuk menghadirkan layanan pengiriman yang aman, tepat waktu, dan efisien dengan armada lengkap serta tim operasional yang berdedikasi tinggi.
                     </p>
                     
                     <!-- Legalitas Grid -->
                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <h4 class="font-bold text-brandBlue mb-3 text-sm tracking-wide uppercase">Legalitas Resmi Perusahaan:</h4>
-                        <div class="grid grid-cols-2 gap-4 text-xs">
+                        <h3 class="font-bold text-brandBlue mb-3 text-xs tracking-wider uppercase">Legalitas Resmi Perusahaan:</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                             <div>
-                                <p class="text-gray-400">NIB</p>
-                                <p class="font-semibold text-gray-700">0220206350423</p>
+                                <p class="text-gray-400">Nomor Induk Berusaha (NIB)</p>
+                                <p class="font-semibold text-gray-800 text-sm mt-0.5">0220206350423</p>
                             </div>
                             <div>
-                                <p class="text-gray-400">NPWP</p>
-                                <p class="font-semibold text-gray-700">72.747.915.6-413.000</p>
+                                <p class="text-gray-400">NPWP Perusahaan</p>
+                                <p class="font-semibold text-gray-800 text-sm mt-0.5">72.747.915.6-413.000</p>
                             </div>
                         </div>
                     </div>
@@ -104,8 +131,8 @@
                 <div class="space-y-6">
                     <!-- Visi Card -->
                     <div class="bg-brandBlue text-white p-8 rounded-2xl shadow-sm">
-                        <span class="text-brandOrange font-bold text-xs uppercase tracking-wider block mb-1">VISI</span>
-                        <p class="text-lg italic leading-relaxed">
+                        <span class="text-brandOrange font-bold text-xs uppercase tracking-wider block mb-2">VISI</span>
+                        <p class="text-lg italic leading-relaxed text-gray-100">
                             "Menjadi perusahaan logistik dan transportasi terpercaya di Indonesia yang mampu memberikan pelayanan terbaik, aman, tepat waktu, dan profesional kepada setiap pelanggan."
                         </p>
                     </div>
@@ -114,24 +141,24 @@
                     <div class="bg-gray-50 p-8 rounded-2xl border-l-8 border-brandOrange shadow-sm">
                         <span class="text-brandBlue font-bold text-xs uppercase tracking-wider block mb-4">MISI</span>
                         <ul class="space-y-3 text-sm text-gray-700">
-                            <li class="flex items-start space-x-2">
-                                <span class="text-brandOrange">1.</span>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-brandOrange font-bold">1.</span>
                                 <span>Memberikan layanan pengiriman yang cepat, aman, dan efisien.</span>
                             </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-brandOrange">2.</span>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-brandOrange font-bold">2.</span>
                                 <span>Membangun kepercayaan dan hubungan jangka panjang dengan pelanggan melalui pelayanan yang berkualitas.</span>
                             </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-brandOrange">3.</span>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-brandOrange font-bold">3.</span>
                                 <span>Menyediakan armada yang terawat, modern, dan sesuai kebutuhan distribusi.</span>
                             </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-brandOrange">4.</span>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-brandOrange font-bold">4.</span>
                                 <span>Mendukung pertumbuhan bisnis pelanggan dengan solusi logistik yang andal.</span>
                             </li>
-                            <li class="flex items-start space-x-2">
-                                <span class="text-brandOrange">5.</span>
+                            <li class="flex items-start space-x-3">
+                                <span class="text-brandOrange font-bold">5.</span>
                                 <span>Menjadi mitra strategis bagi perusahaan dalam memenuhi kebutuhan distribusi dan supply chain.</span>
                             </li>
                         </ul>
@@ -145,92 +172,84 @@
     <section id="armada" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-brandBlue mb-4">Layanan & Armada Tersedia</h2>
-            <p class="text-gray-650 max-w-2xl mx-auto mb-6">Menyediakan pengiriman barang & sparepart perusahaan, distribusi antar kawasan industri, serta trucking regional.</p>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-3">Menyediakan pengiriman barang & sparepart perusahaan, distribusi antar kawasan industri, serta trucking regional.</p>
             <p class="text-sm font-semibold text-brandOrange mb-12">📍 Area Layanan Utama: Bekasi, Karawang, Jakarta, dan sekitarnya</p>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1: CDD Long Wingbox -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-2 transition duration-300 transform">
-                    <div class="bg-gray-200 h-52 flex items-center justify-center text-gray-400 relative">
-                        <img src="images/truk-isuzu.jpeg" alt="Truck CDD Long Wingbox" class="w-full h-full object-cover">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
+                        <img src="images/truk-isuzu.jpeg" alt="Truck CDD Long Wingbox" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Heavy Logistics</span>
-                        <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Truck CDD Long Wingbox</h3>
-                        <p class="text-gray-600 text-sm">Armada kapasitas besar dengan akses buka samping fleksibel. Sangat ideal untuk distribusi logistik regional ritase tinggi produk industri.</p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Heavy Logistics</span>
+                            <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Truck CDD Long Wingbox</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Armada kapasitas besar dengan akses buka samping fleksibel. Sangat ideal untuk distribusi logistik regional ritase tinggi produk industri.</p>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Card 2: Engkel Box -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-2 transition duration-300 transform">
-                    <div class="bg-gray-200 h-52 flex items-center justify-center text-gray-400">
-                        <img src="images/truk-engkel-box.jpeg" alt="Truk Engkel Box" class="w-full h-full object-cover">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
+                        <img src="images/truk-engkel-box.jpeg" alt="Truk Engkel Box" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Medium Truck</span>
-                        <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Engkel Box</h3>
-                        <p class="text-gray-600 text-sm">Truk box tertutup untuk pengiriman material dan onderdil pabrik dengan jaminan proteksi penuh dari cuaca ekstrem selama perjalanan rute industri.</p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Medium Truck</span>
+                            <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Engkel Box</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Truk box tertutup untuk pengiriman material dan onderdil pabrik dengan jaminan proteksi penuh dari cuaca ekstrem selama perjalanan rute industri.</p>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Card 3: Pickup Box & Blindvan -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-2 transition duration-300 transform">
-                    <div class="bg-gray-200 h-52 flex items-center justify-center text-gray-400">
-                        <img src="images/mobil-box-kecil.jpeg" alt="Pickup Box & Blindvan" class="w-full h-full object-cover">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden text-left hover:shadow-lg hover:-translate-y-1.5 transition duration-300 flex flex-col">
+                    <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 overflow-hidden">
+                        <img src="images/mobil-box-kecil.jpeg" alt="Pickup Box & Blindvan" class="w-full h-full object-cover" loading="lazy">
                     </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Light Commercial</span>
-                        <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Pickup Box & Blindvan</h3>
-                        <p class="text-gray-600 text-sm">Armada komersial lincah untuk pengiriman pasokan komponen pabrik mendesak skala kecil rute area padat atau kawasan industri tertentu.</p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandOrange">Light Commercial</span>
+                            <h3 class="text-xl font-bold text-brandBlue mt-1 mb-2">Pickup Box & Blindvan</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Armada komersial lincah untuk pengiriman pasokan komponen pabrik mendesak skala kecil rute area padat atau kawasan industri tertentu.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- KLIEN KAMI SECTION (DENGAN LOGO PERUSAHAAN) -->
+    <!-- KLIEN KAMI SECTION -->
     <section id="klien" class="py-16 bg-white border-t border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-10">
                 Telah Dipercaya Oleh Berbagai Perusahaan Terkemuka
             </h3>
             
-            <!-- Grid Layout untuk Logo Klien -->
-           <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-8 items-center justify-items-center">
-                
-                <!-- Logo PT. AHM -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-ahm.png" alt="Logo PT. AHM" class="max-h-full max-w-full object-contain">
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-8 items-center justify-items-center">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-ahm.png" alt="Logo PT. AHM" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Yamaha -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-yamaha.png" alt="Logo Yamaha" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-yamaha.png" alt="Logo Yamaha" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Suzuki -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-suzuki.png" alt="Logo Suzuki" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-suzuki.png" alt="Logo Suzuki" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Kawasaki -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-kawasaki.png" alt="Logo Kawasaki" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-kawasaki.png" alt="Logo Kawasaki" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Toyota -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-toyota.png" alt="Logo Toyota" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-toyota.png" alt="Logo Toyota" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Daihatsu -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/logo-daihatsu.png" alt="Logo Daihatsu" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/logo-daihatsu.png" alt="Logo Daihatsu" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
-                <!-- Logo Mitsubishi -->
-                <div class="h-12 flex items-center justify-center">
-                    <img src="images/Mitsubishi-logo.png" alt="Logo Mitsubishi" class="max-h-full max-w-full object-contain">
+                <div class="h-12 flex items-center justify-center grayscale hover:grayscale-0 transition duration-200">
+                    <img src="images/Mitsubishi-logo.png" alt="Logo Mitsubishi" class="max-h-full max-w-full object-contain" loading="lazy">
                 </div>
-
             </div>
         </div>
     </section>
@@ -243,27 +262,29 @@
                     <h2 class="text-3xl font-bold mb-4">Mulai Kerja Sama Dengan Kami</h2>
                     <p class="text-gray-300 mb-8">Butuh penawaran harga kontrak pengiriman atau informasi ketersediaan rute? Hubungi tim admin & operasional kami.</p>
                     
-                    <div class="space-y-4 text-sm">
+                    <div class="space-y-5 text-sm">
                         <div class="flex items-start space-x-4">
                             <span class="text-brandOrange text-xl">📞</span>
                             <div>
                                 <h4 class="font-bold">Telepon Kantor</h4>
-                                <p class="text-gray-300">(021) 89907478</p>
+                                <a href="tel:02189907478" class="text-gray-300 hover:text-white transition">(021) 89907478</a>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <span class="text-brandOrange text-xl">💬</span>
                             <div>
                                 <h4 class="font-bold">WhatsApp Bisnis</h4>
-                                <p class="text-gray-300">0812-1134-5055 | 0857-1632-7656</p>
-                                <p class="text-gray-400 text-xs mt-1">Alternatif: 0858-8824-0976</p>
+                                <div class="space-y-0.5 text-gray-300">
+                                    <p><a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">0812-1134-5055</a> &bull; <a href="https://wa.me/6285716327656?text=Halo%20CV.%20Bagasmandiri" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">0857-1632-7656</a></p>
+                                    <p class="text-gray-400 text-xs">Alternatif: <a href="https://wa.me/6285888240976?text=Halo%20CV.%20Bagasmandiri" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">0858-8824-0976</a></p>
+                                </div>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
                             <span class="text-brandOrange text-xl">📧</span>
                             <div>
                                 <h4 class="font-bold">Email Resmi</h4>
-                                <p class="text-gray-300">bagasmandiri39@gmail.com</p>
+                                <a href="mailto:bagasmandiri39@gmail.com" class="text-gray-300 hover:text-white transition">bagasmandiri39@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -277,26 +298,24 @@
                 </div>
 
                 <div class="flex flex-col items-stretch justify-center bg-white/5 p-6 rounded-2xl border border-white/10">
-                    <!-- TAMPILAN PETA GOOGLE MAPS ASLI CV. BAGASMANDIRI -->
-                    <!-- TAMPILAN PETA GOOGLE MAPS ASLI CV. BAGASMANDIRI -->
-<iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.66615601643116!2d107.1373699977994!3d-6.351402332062754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699a37944d006d%3A0xf5002d0a3f092a50!2sCv.Bagas%20mandiri!5e0!3m2!1sid!2sid!4v1784084039471!5m2!1sid!2sid" 
-    width="100%" 
-    height="250" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="strict-origin-when-cross-origin"
-    class="rounded-xl mb-4">
-</iframe>
+                    <!-- Google Maps Embed -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.66615601643116!2d107.1373699977994!3d-6.351402332062754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699a37944d006d%3A0xf5002d0a3f092a50!2sCv.Bagas%20mandiri!5e0!3m2!1sid!2sid!4v1784084039471!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        class="rounded-xl mb-4">
+                    </iframe>
 
-<!-- TOMBOL RUTE LANGSUNG KE GOOGLE MAPS -->
-<a href="https://maps.google.com/?q=Cv.Bagas+mandiri+Lippo+Cikarang" target="_blank" class="block text-center text-xs bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg mb-4 transition font-medium tracking-wide">
-    📍 Buka Rute di Google Maps
-</a>
+                    <a href="https://maps.google.com/?q=Cv.Bagas+mandiri+Lippo+Cikarang" target="_blank" rel="noopener noreferrer" class="block text-center text-xs bg-white/10 hover:bg-white/20 text-white py-2 rounded-lg mb-4 transition font-medium tracking-wide">
+                        📍 Buka Rute di Google Maps
+                    </a>
 
                     <p class="text-center text-sm text-gray-300 mb-4">Klik tombol di bawah untuk langsung terhubung ke WhatsApp bisnis utama kami:</p>
-                    <a href="https://wa.me/6281211345055" target="_blank" class="w-full text-center bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition duration-200">
+                    <a href="https://wa.me/6281211345055?text=Halo%20CV.%20Bagasmandiri,%20saya%20tertarik%20untuk%20bekerja%20sama%20terkait%20layanan%20logistik." target="_blank" rel="noopener noreferrer" class="w-full text-center bg-brandOrange hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl shadow-lg transition duration-200">
                         Hubungi via WhatsApp (Fast Response)
                     </a>
                 </div>
@@ -311,5 +330,21 @@
         </div>
     </footer>
 
+    <!-- Script Hamburger Menu Interaktif -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
